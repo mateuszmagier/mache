@@ -1,0 +1,28 @@
+@import 'config';
+@import 'home-section';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: Lato;
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+    width: 160px; // desktop: 200px
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: $color-wild-sand;
+    background-color: $color-razzmatazz;
+    margin: 0 auto;
+}
