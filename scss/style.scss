@@ -1,5 +1,6 @@
 @import 'config';
 @import 'home-section';
+@import 'about-section';
 
 * {
     margin: 0;
@@ -25,4 +26,10 @@ body {
     color: $color-wild-sand;
     background-color: $color-razzmatazz;
     margin: 0 auto;
+}
+
+// element used to apply width and margin to sections' content
+.container {
+    width: 70%;
+    margin-left: 15%;
 }
