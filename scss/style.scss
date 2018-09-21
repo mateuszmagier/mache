@@ -1,6 +1,7 @@
 @import 'config';
 @import 'home-section';
 @import 'about-section';
+@import 'services-section';
 
 * {
     margin: 0;
@@ -32,4 +33,27 @@ body {
 .container {
     width: 70%;
     margin-left: 15%;
+}
+
+.section-header {
+    font-size: 2.3em; // desktop: 2.53333em
+    font-weight: 300;
+    font-style: italic;
+    color: $color-scorpion;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 2px;
+        background-color: $color-razzmatazz;
+        margin: 25px auto;
+    }
+}
+
+.section-description {
+    font-weight: 300;
+    color: $color-scorpion;
+    line-height: 1.7em;
+    font-size: 0.95em; // desktop: 1em
 }

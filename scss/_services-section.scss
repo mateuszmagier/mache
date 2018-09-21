@@ -1,0 +1,30 @@
+.services-section {
+    text-align: center;
+    padding-top: 70px;
+    
+    .section-description {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+.services-container {
+    display: flex;
+    // dla mniejszych szerokości dać space-between
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.service {
+    
+}
+
+.service-icon {
+    margin-bottom: 40px;
+}
+
+.service-name {
+    color: $color-razzmatazz;
+    text-transform: uppercase;
+}
