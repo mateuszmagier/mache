@@ -114,6 +114,73 @@
   color: #ed145b;
   text-transform: uppercase; }
 
+@font-face {
+  font-family: DroidSerifBold;
+  src: url(fonts/DroidSerif-Bold.ttf); }
+.quotes-section {
+  text-align: center;
+  background-color: black;
+  background-image: url(../img/landing-bg.png);
+  background-size: cover; }
+  .quotes-section:before, .quotes-section:after {
+    color: #ed145b;
+    font-family: DroidSerifBold;
+    font-size: 8em;
+    display: block;
+    content: "\201D"; }
+  .quotes-section:before {
+    transform: rotate(180deg);
+    padding-top: 70px; }
+  .quotes-section:after {
+    padding-top: 70px; }
+  .quotes-section:hover .arrow {
+    opacity: 1; }
+
+.quotes-container {
+  width: 45%;
+  margin-left: 27.5%;
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.quote {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  padding: 20px 0;
+  opacity: 0;
+  transform: translateX(-50px);
+  position: absolute;
+  transition: all .3s ease-out; }
+
+.quote-invisible {
+  left: -9999px; }
+
+.quote-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity .5s ease-in; }
+
+.arrow {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  height: 35px;
+  line-height: 35px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out; }
+
+.left-arrow {
+  left: -100px; }
+
+.right-arrow {
+  right: -100px; }
+
 * {
   margin: 0;
   padding: 0; }
