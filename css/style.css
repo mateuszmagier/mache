@@ -243,7 +243,43 @@
 .card-feature {
   color: #5a5a5a;
   line-height: 2.5em;
-  font-size: 0.9em; }
+  font-size: 0.95em; }
+
+.info-section {
+  padding: 120px 0; }
+
+.info-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 60px; }
+
+.info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; }
+
+.info-icon {
+  grid-column: 1;
+  grid-row: 1/3; }
+
+.info-name {
+  grid-column: 2;
+  grid-row: 1;
+  text-transform: uppercase;
+  color: #ed145b;
+  font-size: 0.95em; }
+
+.info-description {
+  grid-column: 2;
+  grid-row: 2;
+  color: #5a5a5a;
+  font-weight: 300;
+  line-height: 1.7em;
+  font-size: 0.95em; }
 
 * {
   margin: 0;
