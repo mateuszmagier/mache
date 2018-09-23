@@ -281,6 +281,25 @@
   line-height: 1.7em;
   font-size: 0.95em; }
 
+.contact-section {
+  padding: 60px 0;
+  background-color: #ed145b; }
+  .contact-section .button {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white;
+    color: #ed145b; }
+
+.contact-section-container {
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+
+.contact-header {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase; }
+
 * {
   margin: 0;
   padding: 0; }

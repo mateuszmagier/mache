@@ -1,0 +1,23 @@
+.contact-section {
+    padding: 60px 0;
+    background-color: $color-razzmatazz;
+    
+    .button {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: white;
+        color: $color-razzmatazz;
+    }
+}
+
+.contact-section-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.contact-header {
+    font-size: 2em; // desktop: 2.53333em
+    font-weight: 300;
+    text-transform: uppercase;
+}
