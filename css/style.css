@@ -478,6 +478,25 @@
   width: 42%;
   display: inline-block; }
 
+.footer-section {
+  color: white;
+  background-color: #2b2b2b;
+  padding: 40px 0; }
+
+.footer-copyright {
+  display: inline-block; }
+
+.footer-symu {
+  display: inline-block;
+  float: right;
+  font-size: 1.06666em; }
+
+.symu-logo {
+  vertical-align: middle;
+  margin-left: 2px;
+  position: relative;
+  top: -1px; }
+
 * {
   margin: 0;
   padding: 0; }
