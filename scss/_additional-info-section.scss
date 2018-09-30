@@ -1,0 +1,20 @@
+.additional-info-section {
+    background-image: url(../img/landing-bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    
+    .section-header {
+        color: white;
+    }
+    
+    .section-description {
+        color: white;
+        margin-bottom: 40px;
+    }
+}
+
+.additional-info-section-content {
+    width: 45%;
+    margin: 0 auto;
+}
