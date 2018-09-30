@@ -1,0 +1,41 @@
+.download-section {
+    padding: 50px 0;
+    background-color: $color-wild-sand;
+
+    .container {
+        width: 80%; // desktop: 70%
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-header {
+
+        &:after {
+            margin-left: 0;
+        }
+    }
+
+    .button {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+.download-image {
+    width: 55%;
+    display: inline-block;
+}
+
+.download-screenshot {
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.16);
+}
+
+.download-text {
+    width: 42%;
+    display: inline-block;
+}
