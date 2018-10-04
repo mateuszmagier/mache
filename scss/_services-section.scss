@@ -2,6 +2,10 @@
     text-align: center;
     padding-top: 70px;
     
+    @media all and (min-width: 1800px) {
+        padding-top: 100px;
+    }
+    
     .section-description {
         width: 70%;
         margin-left: 15%;

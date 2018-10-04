@@ -48,7 +48,11 @@ body {
 // element used to apply width and margin to sections' content
 .container {
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
+    
+    @media all and (min-width: 1800px) {
+        width: 60%;
+    }
 }
 
 .section-header {
@@ -56,6 +60,10 @@ body {
     font-weight: 300;
     font-style: italic;
     color: $color-scorpion;
+    
+    @media all and (min-width: 1800px) {
+        font-size: 2.53333em;
+    }
 
     &:after {
         content: "";
@@ -65,9 +73,9 @@ body {
         background-color: $color-razzmatazz;
         margin: 25px auto;
         
-//        @media all and (min-width: 1800px) {
-//            width: 200px;
-//        }
+        @media all and (min-width: 1800px) {
+            width: 200px;
+        }
     }
 }
 
@@ -76,4 +84,8 @@ body {
     color: $color-scorpion;
     line-height: 1.7em;
     font-size: 0.95em; // desktop: 1em
+    
+    @media all and (min-width: 1800px) {
+        font-size: 1em;
+    }
 }
