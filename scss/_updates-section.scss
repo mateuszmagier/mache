@@ -36,31 +36,24 @@
 
         &:after {
             opacity: .85;
-            width: 100%;
             height: 100%;
-            bottom: 0;
-            left: 0;
-            //            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            //            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            animation-name: updateAnimation;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
     }
 
     &:after {
         display: block;
         position: absolute;
-        bottom: -10px;
-        left: -1px;
+        bottom: 0;
         content: "";
-        height: 21px;
-        width: calc(100% + 4px);
+        height: 11px;
+        width: 100%;
         background-color: $color-razzmatazz;
         opacity: 1;
-        //        -webkit-clip-path: polygon(0 0, 100% 9px, 100% 100%, 0 12px);
-        //        clip-path: polygon(0 0, 100% 9px, 100% 100%, 0 12px);
-        animation-name: updateAnimationReverse;
-        animation-duration: .3s;
-        animation-fill-mode: forwards;
+        clip-path: polygon(0 0, 100% 9px, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 9px, 100% 100%, 0 100%);
+        transition: all .2s ease-in;
     }
 }
 
@@ -90,6 +83,7 @@
     color: $color-scorpion;
     padding: 20px;
     font-size: 0.95em; // desktop: 1em
+    z-index: 100;
 }
 
 .update-title {
@@ -111,13 +105,12 @@
     .angle-down {
         font-size: 1.5em;
         font-weight: 700;
-        color: black;
         transition: transform .2s ease-in;
     }
-    
+
     &:hover {
         cursor: pointer;
-        
+
         .angle-down {
             transform: translateY(15px);
         }
