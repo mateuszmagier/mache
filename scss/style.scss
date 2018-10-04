@@ -36,6 +36,13 @@ body {
     color: $color-wild-sand;
     background-color: $color-razzmatazz;
     margin: 0 auto;
+    
+    @media all and (min-width: 1800px) {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+    }
 }
 
 // element used to apply width and margin to sections' content
@@ -57,6 +64,10 @@ body {
         height: 2px;
         background-color: $color-razzmatazz;
         margin: 25px auto;
+        
+//        @media all and (min-width: 1800px) {
+//            width: 200px;
+//        }
     }
 }
 

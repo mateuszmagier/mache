@@ -47,6 +47,9 @@
   padding-top: 30px;
   display: flex;
   justify-content: space-between; }
+  @media all and (min-width: 1800px) {
+    .header {
+      padding-top: 40px; } }
 
 .menu-list {
   list-style: none; }
@@ -67,12 +70,17 @@
 .home-section-content {
   text-align: center;
   color: white;
-  margin-top: auto;
   margin-top: 175px; }
+  @media all and (min-width: 1800px) {
+    .home-section-content {
+      margin-top: 280px; } }
 
 .home-section-header {
   font-size: 2.7em;
   font-weight: 300; }
+  @media all and (min-width: 1800px) {
+    .home-section-header {
+      font-size: 3.06666em; } }
   .home-section-header:after {
     content: "";
     display: block;
@@ -82,12 +90,18 @@
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px; }
+    @media all and (min-width: 1800px) {
+      .home-section-header:after {
+        width: 200px; } }
 
 .home-section-description {
   font-weight: 300;
   font-size: 1.2em;
   margin-bottom: 50px;
   line-height: 1.65em; }
+  @media all and (min-width: 1800px) {
+    .home-section-description {
+      font-size: 1.46666em; } }
 
 .about-section {
   background-color: #f4f4f4;
@@ -540,6 +554,12 @@ body {
   color: #f4f4f4;
   background-color: #ed145b;
   margin: 0 auto; }
+  @media all and (min-width: 1800px) {
+    .button {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px; } }
 
 .container {
   width: 70%;
