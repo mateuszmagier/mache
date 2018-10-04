@@ -1,6 +1,6 @@
 .about-section {
     background-color: $color-wild-sand;
-    padding-bottom: 120px;
+    padding-bottom: 110px;
 
     &:before {
         content: "";
@@ -84,7 +84,7 @@
 .about-image {
     width: 65%;
     position: absolute;
-    top: -35px;
+    top: -15px;
     right: 0;
     
     @media all and (min-width: 1800px) {

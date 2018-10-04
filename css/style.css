@@ -105,7 +105,7 @@
 
 .about-section {
   background-color: #f4f4f4;
-  padding-bottom: 120px; }
+  padding-bottom: 110px; }
   .about-section:before {
     content: "";
     display: block;
@@ -170,7 +170,7 @@
 .about-image {
   width: 65%;
   position: absolute;
-  top: -35px;
+  top: -15px;
   right: 0; }
   @media all and (min-width: 1800px) {
     .about-image {
@@ -330,9 +330,16 @@
   text-align: center;
   background-color: #f4f4f4;
   padding-top: 70px; }
+  @media all and (min-width: 1800px) {
+    .prices-section {
+      padding-top: 120px;
+      padding-bottom: 60px; } }
   .prices-section .section-description {
     width: 70%;
-    margin-left: 15%; }
+    margin: 0 auto; }
+    @media all and (min-width: 1800px) {
+      .prices-section .section-description {
+        width: 58%; } }
 
 .card-container {
   padding: 70px 0;
@@ -349,6 +356,12 @@
     height: 35px;
     line-height: 35px;
     font-size: 0.95em; }
+    @media all and (min-width: 1800px) {
+      .card .button {
+        font-size: 1em;
+        width: 200px;
+        height: 50px;
+        line-height: 50px; } }
 
 .card-header {
   font-weight: bold;
@@ -368,9 +381,15 @@
   font-size: 1em;
   position: relative;
   top: -2px; }
+  @media all and (min-width: 1800px) {
+    .dollar {
+      font-size: 1.333333em; } }
 
 .amount {
   font-size: 2.8em; }
+  @media all and (min-width: 1800px) {
+    .amount {
+      font-size: 3.333333em; } }
 
 .card-time {
   margin-bottom: 5px; }
@@ -389,6 +408,9 @@
   color: #5a5a5a;
   line-height: 2.5em;
   font-size: 0.95em; }
+  @media all and (min-width: 1800px) {
+    .card-feature {
+      font-size: 1em; } }
 
 .info-section {
   padding: 120px 0; }
@@ -399,13 +421,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 60px; }
+  @media all and (min-width: 1800px) {
+    .info-container {
+      grid-column-gap: 30px;
+      grid-row-gap: 80px; } }
 
 .info {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px; }
+  grid-column-gap: 20px;
+  grid-row-gap: 12px; }
 
 .info-icon {
   grid-column: 1;
@@ -417,6 +443,9 @@
   text-transform: uppercase;
   color: #ed145b;
   font-size: 0.95em; }
+  @media all and (min-width: 1800px) {
+    .info-name {
+      font-size: 1em; } }
 
 .info-description {
   grid-column: 2;
@@ -425,10 +454,17 @@
   font-weight: 300;
   line-height: 1.7em;
   font-size: 0.95em; }
+  @media all and (min-width: 1800px) {
+    .info-description {
+      font-size: 1em;
+      line-height: 2; } }
 
 .contact-section {
   padding: 60px 0;
   background-color: #ed145b; }
+  @media all and (min-width: 1800px) {
+    .contact-section {
+      padding: 70px 0; } }
   .contact-section .button {
     margin-left: 0;
     margin-right: 0;
@@ -444,6 +480,9 @@
   font-size: 2em;
   font-weight: 300;
   text-transform: uppercase; }
+  @media all and (min-width: 1800px) {
+    .contact-header {
+      font-size: 2.5em; } }
 
 .updates-section {
   padding-top: 70px;
@@ -664,6 +703,7 @@ body {
   font-size: 0.95em; }
   @media all and (min-width: 1800px) {
     .section-description {
-      font-size: 1em; } }
+      font-size: 1em;
+      line-height: 2; } }
 
 /*# sourceMappingURL=style.css.map */
