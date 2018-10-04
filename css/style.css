@@ -188,20 +188,30 @@
       padding-top: 100px; } }
   .services-section .section-description {
     width: 70%;
-    margin-left: 15%; }
+    margin: 0 auto; }
+    @media all and (min-width: 1800px) {
+      .services-section .section-description {
+        width: 58%; } }
 
 .services-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 100px; }
 
 .service-icon {
-  margin-bottom: 40px; }
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 100%; }
 
 .service-name {
   color: #ed145b;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 30px; }
 
 @font-face {
   font-family: DroidSerifBold;
