@@ -122,7 +122,11 @@
 }
 
 .left-arrow {
-    left: -100px;
+    left: -35%;
+    
+    @media all and (min-width: 1800px) {
+        left: -5%;
+    }
 
     &:after {
         left: 1px;
@@ -135,7 +139,11 @@
 }
 
 .right-arrow {
-    right: -100px;
+    right: -35%;
+    
+    @media all and (min-width: 1800px) {
+        right: -5%;
+    }
 
     &:after {
         left: -1px;

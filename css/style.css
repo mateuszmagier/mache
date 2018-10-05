@@ -95,7 +95,10 @@
 
 .about-section {
   background-color: #f4f4f4;
-  padding-bottom: 110px; }
+  padding-bottom: 60px; }
+  @media all and (min-width: 1800px) {
+    .about-section {
+      padding-bottom: 110px; } }
   .about-section:before {
     content: "";
     display: block;
@@ -165,6 +168,10 @@
   @media all and (min-width: 1800px) {
     .about-image {
       width: 65%; } }
+  @media all and (min-width: 1451px) and (max-width: 1799px) {
+    .about-image {
+      width: 50%;
+      margin-right: 5%; } }
 
 .about-macbook {
   width: 97%;
@@ -299,7 +306,10 @@
       background-color: rgba(255, 255, 255, 0.15); }
 
 .left-arrow {
-  left: -100px; }
+  left: -35%; }
+  @media all and (min-width: 1800px) {
+    .left-arrow {
+      left: -5%; } }
   .left-arrow:after {
     left: 1px; }
     @media all and (min-width: 1800px) {
@@ -308,7 +318,10 @@
         left: -6px; } }
 
 .right-arrow {
-  right: -100px; }
+  right: -35%; }
+  @media all and (min-width: 1800px) {
+    .right-arrow {
+      right: -5%; } }
   .right-arrow:after {
     left: -1px; }
     @media all and (min-width: 1800px) {
