@@ -1,7 +1,11 @@
 .footer-section {
     color: white;
     background-color: $color-mine-shaft;
-    padding: 40px 0; // desktop: 65px
+    padding: 40px 0;
+    
+    @media all and (min-width: 1800px) {
+        padding: 65px 0;
+    }
 }
 
 .footer-copyright {
@@ -19,4 +23,8 @@
     margin-left: 2px;
     position: relative;
     top: -1px;
+    
+    @media all and (min-width: 1800px) {
+        top: 0;
+    }
 }

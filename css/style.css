@@ -578,6 +578,9 @@
   background-size: cover;
   text-align: center;
   padding: 100px 0; }
+  @media all and (min-width: 1800px) {
+    .additional-info-section {
+      padding: 140px 0; } }
   .additional-info-section .section-header {
     color: white; }
   .additional-info-section .section-description {
@@ -587,25 +590,40 @@
 .additional-info-section-content {
   width: 45%;
   margin: 0 auto; }
+  @media all and (min-width: 1800px) {
+    .additional-info-section-content {
+      width: 35%; } }
 
 .download-section {
   padding: 50px 0;
   background-color: #f4f4f4; }
+  @media all and (min-width: 1800px) {
+    .download-section {
+      padding: 70px 0; } }
   .download-section .container {
     width: 80%;
     margin-left: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media all and (min-width: 1800px) {
+      .download-section .container {
+        width: 70%; } }
   .download-section .section-header:after {
     margin-left: 0; }
   .download-section .button {
     margin-top: 30px;
     margin-left: 0; }
+    @media all and (min-width: 1800px) {
+      .download-section .button {
+        margin-top: 50px; } }
 
 .download-image {
   width: 55%;
   display: inline-block; }
+  @media all and (min-width: 1800px) {
+    .download-image {
+      width: 57%; } }
 
 .download-screenshot {
   width: 100%;
@@ -616,11 +634,17 @@
 .download-text {
   width: 42%;
   display: inline-block; }
+  @media all and (min-width: 1800px) {
+    .download-text {
+      width: 38%; } }
 
 .footer-section {
   color: white;
   background-color: #2b2b2b;
   padding: 40px 0; }
+  @media all and (min-width: 1800px) {
+    .footer-section {
+      padding: 65px 0; } }
 
 .footer-copyright {
   display: inline-block; }
@@ -635,6 +659,9 @@
   margin-left: 2px;
   position: relative;
   top: -1px; }
+  @media all and (min-width: 1800px) {
+    .symu-logo {
+      top: 0; } }
 
 * {
   margin: 0;
@@ -679,7 +706,8 @@ body {
   color: #5a5a5a; }
   @media all and (min-width: 1800px) {
     .section-header {
-      font-size: 2.53333em; } }
+      font-size: 2.53333em;
+      line-height: 1.368; } }
   .section-header:after {
     content: "";
     display: block;

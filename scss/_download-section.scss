@@ -2,12 +2,20 @@
     padding: 50px 0;
     background-color: $color-wild-sand;
 
+    @media all and (min-width: 1800px) {
+        padding: 70px 0;
+    }
+
     .container {
-        width: 80%; // desktop: 70%
+        width: 80%;
         margin-left: 10%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media all and (min-width: 1800px) {
+            width: 70%;
+        }
     }
 
     .section-header {
@@ -20,12 +28,20 @@
     .button {
         margin-top: 30px;
         margin-left: 0;
+
+        @media all and (min-width: 1800px) {
+            margin-top: 50px;
+        }
     }
 }
 
 .download-image {
     width: 55%;
     display: inline-block;
+
+    @media all and (min-width: 1800px) {
+        width: 57%;
+    }
 }
 
 .download-screenshot {
@@ -38,4 +54,8 @@
 .download-text {
     width: 42%;
     display: inline-block;
+
+    @media all and (min-width: 1800px) {
+        width: 38%;
+    }
 }
