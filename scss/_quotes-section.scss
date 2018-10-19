@@ -16,6 +16,10 @@
         display: block;
         content: "\201D";
 
+        @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+            font-size: 9.5em;
+        }
+
         @media all and (min-width: 1800px) {
             font-size: 10.53333em;
         }
@@ -42,6 +46,10 @@
     display: flex;
     align-items: center;
 
+    @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+        width: 50%;
+    }
+
     @media all and (min-width: 1800px) {
         width: 60%;
     }
@@ -58,6 +66,12 @@
     transform: translateX(-50px);
     position: absolute;
     transition: all .3s ease-out;
+
+    @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+        font-size: 1.4em;
+        margin-left: 7.5%;
+        width: 85%;
+    }
 
     @media all and (min-width: 1800px) {
         font-size: 1.66666em;
@@ -88,6 +102,10 @@
     opacity: 0;
     transition: all .2s ease-in-out;
 
+    @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+        font-size: 4em;
+    }
+
     @media all and (min-width: 1800px) {
         font-size: 5em;
     }
@@ -104,6 +122,11 @@
         border-radius: 100%;
         transform: scale(0);
         transition: all .2s ease-in;
+
+        @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+            width: 40px;
+            height: 40px;
+        }
 
         @media all and (min-width: 1800px) {
             width: 50px;
@@ -123,13 +146,21 @@
 
 .left-arrow {
     left: -35%;
-    
+
+    @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+        left: -25%;
+    }
+
     @media all and (min-width: 1800px) {
         left: -5%;
     }
 
     &:after {
         left: 1px;
+
+        @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+            left: -1px;
+        }
 
         @media all and (min-width: 1800px) {
             top: 1px;
@@ -141,12 +172,20 @@
 .right-arrow {
     right: -35%;
     
+    @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+        right: -25%;
+    }
+
     @media all and (min-width: 1800px) {
         right: -5%;
     }
 
     &:after {
         left: -1px;
+
+        @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
+            left: -3px;
+        }
 
         @media all and (min-width: 1800px) {
             top: 1px;

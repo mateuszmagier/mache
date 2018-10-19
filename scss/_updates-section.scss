@@ -14,17 +14,20 @@
 }
 
 .updates-container {
+    width: 100%;
     padding: 70px 0;
     text-align: left;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 50px;
+    justify-content: space-between;
 }
 
 .update {
     background-color: $color-wild-sand;
+    max-width: 360px; // image original width
 }
 
 .update-photo-wrapper {
@@ -80,7 +83,8 @@
 
 .update-photo {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .update-info {

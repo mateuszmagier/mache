@@ -6,11 +6,10 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-column-gap: 30px;
     grid-row-gap: 60px;
     
     @media all and (min-width: 1800px) {
-        grid-column-gap: 30px;
         grid-row-gap: 80px;
     }
 }
