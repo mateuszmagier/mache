@@ -16,6 +16,12 @@
             width: 58%;
         }
     }
+
+    .container {
+        @media all and (max-width: 1200px) {
+            width: 80%;
+        }
+    }
 }
 
 .card-container {
@@ -37,6 +43,10 @@
         height: 35px;
         line-height: 35px;
         font-size: 0.95em;
+
+        @media all and (max-width: 1050px) {
+            width: 120px;
+        }
 
         @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
             width: 180px;
@@ -60,6 +70,11 @@
     padding: 0 $card-horizontal-padding; // padding: 0 30px;
     padding-top: 15px;
     transition: background-color 0.2s ease-in-out;
+
+    @media all and (max-width: 1050px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .card-name {
         cursor: default;
@@ -97,6 +112,11 @@
     padding: 0 $card-horizontal-padding;
     padding-bottom: 40px;
     padding-top: 40px;
+
+    @media all and (max-width: 1050px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .button {
         color: $color-wild-sand;

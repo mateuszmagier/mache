@@ -405,6 +405,9 @@
     @media all and (min-width: 1800px) {
       .prices-section .section-description {
         width: 58%; } }
+  @media all and (max-width: 1200px) {
+    .prices-section .container {
+      width: 80%; } }
 
 .card-container {
   padding: 70px 0;
@@ -421,6 +424,9 @@
     height: 35px;
     line-height: 35px;
     font-size: 0.95em; }
+    @media all and (max-width: 1050px) {
+      .card .button {
+        width: 120px; } }
     @media all and (min-width: 1500px) and (max-width: 1800px) {
       .card .button {
         width: 180px;
@@ -440,6 +446,10 @@
   padding: 0 30px;
   padding-top: 15px;
   transition: background-color 0.2s ease-in-out; }
+  @media all and (max-width: 1050px) {
+    .card-header {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .card-header .card-name {
     cursor: default;
     text-transform: uppercase;
@@ -469,6 +479,10 @@
   padding: 0 30px;
   padding-bottom: 40px;
   padding-top: 40px; }
+  @media all and (max-width: 1050px) {
+    .card-body {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .card-body .button {
     color: #f4f4f4;
     background-color: #ed145b;
@@ -484,6 +498,9 @@
 
 .info-section {
   padding: 120px 0; }
+  @media all and (max-width: 1200px) {
+    .info-section .container {
+      width: 80%; } }
 
 .info-container {
   display: grid;
@@ -491,6 +508,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 60px; }
+  @media all and (max-width: 1200px) {
+    .info-container {
+      grid-column-gap: 20px; } }
   @media all and (min-width: 1800px) {
     .info-container {
       grid-row-gap: 80px; } }
@@ -539,6 +559,9 @@
     margin-right: 0;
     background-color: white;
     color: #ed145b; }
+    @media all and (max-width: 1050px) {
+      .contact-section .button {
+        width: 150px; } }
     @media all and (min-width: 1500px) and (max-width: 1800px) {
       .contact-section .button {
         width: 180px; } }
@@ -546,12 +569,16 @@
 .contact-section-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white; }
 
 .contact-header {
   font-size: 1.9em;
   font-weight: 300;
   text-transform: uppercase; }
+  @media all and (max-width: 1050px) {
+    .contact-header {
+      font-size: 1.6em; } }
   @media all and (min-width: 1500px) and (max-width: 1800px) {
     .contact-header {
       font-size: 2.3em; } }
@@ -580,6 +607,10 @@
   grid-column-gap: 20px;
   grid-row-gap: 50px;
   justify-content: space-between; }
+  @media all and (max-width: 1200px) {
+    .updates-container {
+      grid-row-gap: 20px;
+      padding: 30px 0; } }
 
 .update {
   background-color: #f4f4f4;
@@ -680,6 +711,9 @@
 .additional-info-section-content {
   width: 45%;
   margin: 0 auto; }
+  @media all and (max-width: 1200px) {
+    .additional-info-section-content {
+      width: 60%; } }
   @media all and (min-width: 1800px) {
     .additional-info-section-content {
       width: 35%; } }
@@ -696,6 +730,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media all and (max-width: 1200px) {
+      .download-section .container {
+        width: 90%;
+        margin-left: 5%; } }
     @media all and (min-width: 1800px) {
       .download-section .container {
         width: 70%; } }
@@ -711,6 +749,13 @@
 .download-image {
   width: 55%;
   display: inline-block; }
+  @media all and (max-width: 1050px) {
+    .download-image {
+      width: 55%; } }
+  @media all and (min-width: 1050px) and (max-width: 1200px) {
+    .download-image {
+      width: 52%;
+      margin-left: 3%; } }
   @media all and (min-width: 1800px) {
     .download-image {
       width: 57%; } }
@@ -724,6 +769,9 @@
 .download-text {
   width: 42%;
   display: inline-block; }
+  @media all and (max-width: 1050px) {
+    .download-text {
+      width: 42%; } }
   @media all and (min-width: 1800px) {
     .download-text {
       width: 38%; } }
@@ -785,7 +833,7 @@ body {
 .container {
   width: 70%;
   margin: 0 auto; }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 1200px) {
     .container {
       width: 80%; } }
   @media all and (min-width: 1800px) {

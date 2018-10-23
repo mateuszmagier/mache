@@ -1,5 +1,11 @@
 .info-section {
     padding: 120px 0;
+
+    .container {
+        @media all and (max-width: 1200px) {
+            width: 80%;
+        }
+    }
 }
 
 .info-container {
@@ -8,7 +14,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 60px;
-    
+
+    @media all and (max-width: 1200px) {
+        grid-column-gap: 20px;
+    }
+
     @media all and (min-width: 1800px) {
         grid-row-gap: 80px;
     }
@@ -33,7 +43,7 @@
     text-transform: uppercase;
     color: $color-razzmatazz;
     font-size: 0.95em;
-    
+
     @media all and (min-width: 1800px) {
         font-size: 1em;
     }

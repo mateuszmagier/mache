@@ -23,6 +23,11 @@
     grid-column-gap: 20px;
     grid-row-gap: 50px;
     justify-content: space-between;
+
+    @media all and (max-width: 1200px) {
+        grid-row-gap: 20px;
+        padding: 30px 0;
+    }
 }
 
 .update {

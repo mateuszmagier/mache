@@ -13,6 +13,11 @@
         justify-content: space-between;
         align-items: center;
 
+        @media all and (max-width: 1200px) {
+            width: 90%;
+            margin-left: 5%;
+        }
+
         @media all and (min-width: 1800px) {
             width: 70%;
         }
@@ -38,6 +43,15 @@
 .download-image {
     width: 55%;
     display: inline-block;
+    
+    @media all and (max-width: 1050px) {
+        width: 55%;
+    }
+
+    @media all and (min-width: 1050px) and (max-width: 1200px) {
+        width: 52%;
+        margin-left: 3%;
+    }
 
     @media all and (min-width: 1800px) {
         width: 57%;
@@ -54,6 +68,10 @@
 .download-text {
     width: 42%;
     display: inline-block;
+    
+    @media all and (max-width: 1050px) {
+        width: 42%;
+    }
 
     @media all and (min-width: 1800px) {
         width: 38%;
