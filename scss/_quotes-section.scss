@@ -63,9 +63,16 @@
     line-height: 1.7em;
     padding: 20px 0;
     opacity: 0;
-    transform: translateX(-50px);
     position: absolute;
     transition: all .3s ease-out;
+    
+    &--left {
+        transform: translateX(-50px);
+    }
+    
+    &--right {
+        transform: translateX(50px);
+    }
 
     @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
         font-size: 1.4em;

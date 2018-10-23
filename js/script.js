@@ -15,18 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     newActiveQuote = this.activeQuote.nextElementSibling;
                 else
                     newActiveQuote = this.quotes[0];
+                this.activeQuote.classList.add("quote--left");
             } else { // previous quote
                 if (this.activeQuote.previousElementSibling.classList.contains("quote"))
                     newActiveQuote = this.activeQuote.previousElementSibling;
                 else
                     newActiveQuote = this.quotes[this.quotes.length - 1];
+                this.activeQuote.classList.add("quote--right");
             }
 
             this.activeQuote.classList.remove("quote-active");
+            
             setTimeout(function () {
                 this.activeQuote.classList.add("quote-invisible");
                 newActiveQuote.classList.remove("quote-invisible");
                 newActiveQuote.classList.add("quote-active");
+                this.activeQuote.classList.remove("quote--left", "quote--right");
                 this.activeQuote = newActiveQuote;
             }.bind(this), 300);
         }
