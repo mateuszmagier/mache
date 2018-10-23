@@ -54,6 +54,9 @@
   font-weight: 700;
   font-size: 1.06666em;
   transition: color .2s ease-in-out; }
+  @media all and (max-width: 900px) {
+    .menu-link {
+      font-size: 1em; } }
   .menu-link:hover {
     color: #ed145b; }
 
@@ -61,6 +64,10 @@
   text-align: center;
   color: white;
   margin-top: 175px; }
+  @media all and (max-width: 900px) {
+    .home-section-content {
+      width: 80%;
+      margin-left: 10%; } }
   @media all and (min-width: 1800px) {
     .home-section-content {
       margin-top: 280px; } }
@@ -68,6 +75,9 @@
 .home-section-header {
   font-size: 2.7em;
   font-weight: 300; }
+  @media all and (max-width: 900px) {
+    .home-section-header {
+      font-size: 2.3em; } }
   @media all and (min-width: 1800px) {
     .home-section-header {
       font-size: 3.06666em; } }
@@ -89,6 +99,9 @@
   font-size: 1.2em;
   margin-bottom: 50px;
   line-height: 1.65em; }
+  @media all and (max-width: 900px) {
+    .home-section-description {
+      font-size: 1.1em; } }
   @media all and (min-width: 1800px) {
     .home-section-description {
       font-size: 1.46666em; } }
@@ -118,7 +131,11 @@
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative; }
+  @media all and (max-width: 1200px) {
+    .about-section-content {
+      margin-left: 10%; } }
   @media all and (min-width: 1800px) {
     .about-section-content {
       width: 80%;
@@ -127,6 +144,9 @@
 
 .about-text {
   width: 35%; }
+  @media all and (max-width: 1050px) {
+    .about-text {
+      width: 40%; } }
   @media all and (min-width: 1800px) {
     .about-text {
       width: 32%; } }
@@ -165,6 +185,12 @@
   position: absolute;
   top: -15px;
   right: 0; }
+  @media all and (max-width: 1050px) {
+    .about-image {
+      width: 58%; } }
+  @media all and (min-width: 1050px) and (max-width: 1200px) {
+    .about-image {
+      position: static; } }
   @media all and (min-width: 1800px) {
     .about-image {
       width: 65%; } }
@@ -195,6 +221,9 @@
   justify-content: space-around;
   margin-top: 70px;
   margin-bottom: 100px; }
+  @media all and (max-width: 1200px) {
+    .services-container {
+      justify-content: space-between; } }
 
 .service-icon {
   width: 130px;
@@ -756,6 +785,9 @@ body {
 .container {
   width: 70%;
   margin: 0 auto; }
+  @media all and (max-width: 900px) {
+    .container {
+      width: 80%; } }
   @media all and (min-width: 1800px) {
     .container {
       width: 60%; } }

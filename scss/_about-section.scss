@@ -30,7 +30,12 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    
+    @media all and (max-width: 1200px) {
+        margin-left: 10%;
+    }
 
     @media all and (min-width: 1800px) {
         width: 80%;
@@ -41,7 +46,11 @@
 
 .about-text {
     width: 35%;
-
+    
+    @media all and (max-width: 1050px) {
+        width: 40%;
+    }
+    
     @media all and (min-width: 1800px) {
         width: 32%;
     }
@@ -90,10 +99,15 @@
     top: -15px;
     right: 0;
     
+    @media all and (max-width: 1050px) {
+        width: 58%;
+    }
+    
+    @media all and (min-width: 1050px) and (max-width: 1200px) {
+        position: static;
+    }
+    
     @media all and (min-width: 1800px) {
-        //        position: absolute;
-        //        top: -15px;
-        //        right: 0; 
         width: 65%;
     }
     

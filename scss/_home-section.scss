@@ -29,6 +29,10 @@
     font-weight: 700;
     font-size: 1.06666em;
     transition: color .2s ease-in-out;
+    
+    @media all and (max-width: 900px) {
+        font-size: 1em;
+    }
 
     &:hover {
         color: $color-razzmatazz;
@@ -40,6 +44,11 @@
     color: white;
     margin-top: 175px;
     
+    @media all and (max-width: 900px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
     @media all and (min-width: 1800px) {
         margin-top: 280px;
     }
@@ -48,6 +57,10 @@
 .home-section-header {
     font-size: 2.7em;
     font-weight: 300;
+    
+    @media all and (max-width: 900px) {
+        font-size: 2.3em;
+    }
     
     @media all and (min-width: 1800px) {
         font-size: 3.06666em;
@@ -74,6 +87,10 @@
     font-size: 1.2em;
     margin-bottom: 50px;
     line-height: 1.65em;
+    
+    @media all and (max-width: 900px) {
+        font-size: 1.1em;
+    }
     
     @media all and (min-width: 1800px) {
         font-size: 1.46666em;

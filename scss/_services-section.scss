@@ -21,6 +21,10 @@
     justify-content: space-around;
     margin-top: 70px;
     margin-bottom: 100px;
+    
+    @media all and (max-width: 1200px) {
+        justify-content: space-between;
+    }
 }
 
 .service {}
