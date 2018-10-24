@@ -31,18 +31,24 @@
 .home-section {
   height: 100vh;
   background-image: url(../img/landing-bg.png);
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center; }
 
 .header {
-  padding-top: 30px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px; }
   @media all and (max-width: 750px) {
     .header.container {
       width: 85%; } }
   @media all and (min-width: 1800px) {
     .header {
-      padding-top: 40px; } }
+      top: 40px; } }
 
 .menu-list {
   list-style: none; }
@@ -69,14 +75,8 @@
 .home-section-content {
   text-align: center;
   color: white;
-  margin-top: 175px; }
-  @media all and (max-width: 900px) {
-    .home-section-content {
-      width: 80%;
-      margin-left: 10%; } }
-  @media all and (min-width: 1800px) {
-    .home-section-content {
-      margin-top: 280px; } }
+  width: 80%;
+  margin-left: 10%; }
 
 .home-section-header {
   font-size: 2.7em;
