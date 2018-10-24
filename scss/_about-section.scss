@@ -1,6 +1,10 @@
 .about-section {
     background-color: $color-wild-sand;
     padding-bottom: 60px;
+    
+    @media all and (max-width: 600px) {
+        padding-bottom: 30px;
+    }
 
     @media all and (min-width: 1800px) {
         padding-bottom: 110px;
@@ -39,6 +43,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    
+    @media all and (max-width: 600px) {
+        margin-top: 40px;
+    }
 
     @media all and (max-width: 900px) {
         flex-direction: column;
@@ -97,7 +105,7 @@
         height: 22px;
         line-height: 22px;
         text-align: center;
-        transition: margin-left .2s ease-in;
+        transition: transform .2s ease-in;
         position: relative;
         top: 1px;
         border: 1px solid $color-razzmatazz;
@@ -110,7 +118,9 @@
     }
 
     &:hover .fa-caret-right {
-        margin-left: 20px;
+        transform: translateX(20px);
+//        left: 20px;
+//        margin-left: 20px;
     }
 }
 

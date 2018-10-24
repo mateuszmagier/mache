@@ -3,6 +3,10 @@
     background-color: $color-mine-shaft;
     padding: 40px 0;
     
+    @media all and (max-width: 600px) {
+        text-align: center;
+    }
+    
     @media all and (max-width: 900px) {
         padding: 30px 0;
         font-size: 0.95em;
@@ -15,11 +19,21 @@
 
 .footer-copyright {
     display: inline-block;
+    
+    @media all and (max-width: 600px) {
+        display: block;
+    }
 }
 
 .footer-symu {
     display: inline-block;
     float: right;
+    
+    @media all and (max-width: 600px) {
+        display: block;
+        float: none;
+        margin-top: 10px;
+    }
 }
 
 .symu-logo {

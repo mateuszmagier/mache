@@ -65,6 +65,10 @@ body {
     font-style: italic;
     color: $color-scorpion;
     
+    @media all and (max-width: 600px) {
+        font-size: 2em;
+    }
+    
     @media all and (min-width: 1800px) {
         font-size: 2.53333em;
         line-height: 1.368;
@@ -77,6 +81,10 @@ body {
         height: 2px;
         background-color: $color-razzmatazz;
         margin: 25px auto;
+        
+        @media all and (max-width: 600px) {
+            width: 140px;
+        }
         
         @media all and (min-width: 1800px) {
             width: 200px;

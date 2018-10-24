@@ -4,6 +4,10 @@
     text-align: center;
     padding: 100px 0;
     
+    @media all and (max-width: 600px) {
+        padding: 60px 0;
+    }
+    
     @media all and (min-width: 1800px) {
         padding: 140px 0;
     }
@@ -23,7 +27,11 @@
     width: 45%;
     margin: 0 auto;
     
-    @media all and (max-width: 900px) {
+    @media all and (max-width: 600px) {
+        width: 80%;
+    }
+    
+    @media all and (min-width: 601px) and (max-width: 900px) {
         width: 70%;
     }
     

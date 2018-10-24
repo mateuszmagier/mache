@@ -15,6 +15,12 @@
         font-size: 8em;
         display: block;
         content: "\201D";
+        padding-top: 70px;
+        
+        @media all and (max-width: 600px) {
+            font-size: 7em;
+            padding-top: 90px;
+        }
 
         @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
             font-size: 9.5em;
@@ -27,11 +33,6 @@
 
     &:before {
         transform: rotate(180deg);
-        padding-top: 70px;
-    }
-
-    &:after {
-        padding-top: 70px;
     }
 
     &:hover .arrow {
@@ -76,6 +77,11 @@
     
     &--right {
         transform: translateX(50px);
+    }
+    
+    @media all and (max-width: 600px) {
+        font-size: 1.1em;
+        line-height: 1.5;
     }
     
     @media all and (max-width: 900px) {
