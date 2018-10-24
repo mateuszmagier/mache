@@ -13,7 +13,12 @@
         justify-content: space-between;
         align-items: center;
 
-        @media all and (max-width: 1200px) {
+        @media all and (max-width: 900px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media all and (min-width: 901px) and (max-width: 1200px) {
             width: 90%;
             margin-left: 5%;
         }
@@ -27,12 +32,21 @@
 
         &:after {
             margin-left: 0;
+
+            @media all and (max-width: 900px) {
+                margin-left: auto;
+            }
         }
     }
 
     .button {
         margin-top: 30px;
         margin-left: 0;
+
+        @media all and (max-width: 900px) {
+            margin-left: auto;
+            margin-top: 20px;
+        }
 
         @media all and (min-width: 1800px) {
             margin-top: 50px;
@@ -43,8 +57,14 @@
 .download-image {
     width: 55%;
     display: inline-block;
-    
-    @media all and (max-width: 1050px) {
+
+    @media all and (max-width: 900px) {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    @media all and (min-width: 901px) and (max-width: 1050px) {
         width: 55%;
     }
 
@@ -68,8 +88,13 @@
 .download-text {
     width: 42%;
     display: inline-block;
-    
-    @media all and (max-width: 1050px) {
+
+    @media all and (max-width: 900px) {
+        order: 1;
+        width: 100%;
+    }
+
+    @media all and (min-width: 901px) and (max-width: 1050px) {
         width: 42%;
     }
 

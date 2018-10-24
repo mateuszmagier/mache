@@ -2,6 +2,10 @@
     padding: 60px 0;
     background-color: $color-razzmatazz;
 
+    @media all and (max-width: 900px) {
+        padding: 40px 0;
+    }
+
     @media all and (min-width: 1800px) {
         padding: 70px 0;
     }
@@ -12,7 +16,11 @@
         background-color: white;
         color: $color-razzmatazz;
 
-        @media all and (max-width: 1050px) {
+        @media all and (max-width: 900px) {
+            margin-top: 20px;
+        }
+
+        @media all and (min-width: 901px) and (max-width: 1050px) {
             width: 150px;
         }
 
@@ -27,14 +35,29 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+
+    @media all and (max-width: 900px) {
+        flex-direction: column;
+        //        width: 90%;
+    }
+
+    &.container {
+        @media all and (max-width: 900px) {
+            width: 90%;
+        }
+    }
 }
 
 .contact-header {
-    font-size: 1.9em; // desktop: 2.53333em
+    font-size: 1.9em;
     font-weight: 300;
     text-transform: uppercase;
 
-    @media all and (max-width: 1050px) {
+    @media all and (max-width: 900px) {
+        font-size: 1.52em;
+    }
+
+    @media all and (min-width: 901px) and (max-width: 1050px) {
         font-size: 1.6em;
     }
 

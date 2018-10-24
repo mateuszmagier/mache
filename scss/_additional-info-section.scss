@@ -23,7 +23,11 @@
     width: 45%;
     margin: 0 auto;
     
-    @media all and (max-width: 1200px) {
+    @media all and (max-width: 900px) {
+        width: 70%;
+    }
+    
+    @media all and (min-width: 901px) and (max-width: 1200px) {
         width: 60%;
     }
     

@@ -12,7 +12,7 @@
     &:after {
         color: $color-razzmatazz;
         font-family: DroidSerifBold;
-        font-size: 8em; // desktop: 10.53333em
+        font-size: 8em;
         display: block;
         content: "\201D";
 
@@ -40,11 +40,15 @@
 }
 
 .quotes-container {
-    width: 45%;
+    width: 46%;
     margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
+    
+    @media all and (max-width: 900px) {
+        width: 70%;
+    }
 
     @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
         width: 50%;
@@ -72,6 +76,11 @@
     
     &--right {
         transform: translateX(50px);
+    }
+    
+    @media all and (max-width: 900px) {
+        width: 100%;
+        margin-left: 0;
     }
 
     @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
@@ -153,6 +162,10 @@
 
 .left-arrow {
     left: -35%;
+    
+    @media all and (max-width: 900px) {
+        left: -17%;
+    }
 
     @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
         left: -25%;
@@ -178,6 +191,10 @@
 
 .right-arrow {
     right: -35%;
+    
+    @media all and (max-width: 900px) {
+        right: -17%;
+    }
     
     @media all and (min-width: $laptop-desktop-mid-breakpoint) and (max-width: 1800px) {
         right: -25%;

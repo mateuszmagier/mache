@@ -7,6 +7,10 @@
         width: 70%;
         margin: 0 auto;
 
+        @media all and (max-width: 900px) {
+            width: 80%;
+        }
+
         @media all and (min-width: 1800px) {
             width: 58%;
         }
@@ -23,6 +27,11 @@
     grid-column-gap: 20px;
     grid-row-gap: 50px;
     justify-content: space-between;
+
+    @media all and (max-width: 900px) {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+    }
 
     @media all and (max-width: 1200px) {
         grid-row-gap: 20px;

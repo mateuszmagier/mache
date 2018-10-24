@@ -12,6 +12,10 @@
         width: 70%;
         margin: 0 auto;
 
+        @media all and (max-width: 900px) {
+            width: 80%;
+        }
+
         @media all and (min-width: 1800px) {
             width: 58%;
         }
@@ -28,11 +32,33 @@
     padding: 70px 0;
     display: flex;
     justify-content: space-between;
+    
+    @media all and (max-width: 700px) {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        justify-content: stretch;
+    }
+
+    @media all and (min-width: 701px) and (max-width: 900px) {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        justify-content: stretch;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
 }
 
 .card {
     text-align: center;
     font-family: Lato;
+
+    @media all and (max-width: 900px) {
+        display: flex;
+        align-items: stretch;
+    }
 
     &:hover .card-header {
         background-color: $color-razzmatazz;
@@ -71,9 +97,26 @@
     padding-top: 15px;
     transition: background-color 0.2s ease-in-out;
 
-    @media all and (max-width: 1050px) {
+    @media all and (max-width: 900px) {
+        width: 45%;
+        float: left;
+        display: inline-block;
+        padding: 0;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    @media all and (min-width: 901px) and (max-width: 1050px) {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .card-price {
+        
+        @media all and (max-width: 900px) {
+            position: relative;
+            top: 15px;
+        }
     }
 
     .card-name {
@@ -82,6 +125,19 @@
         background-color: $color-wild-sand;
         color: $color-scorpion;
         transform: translatey(50%);
+
+        @media all and (max-width: 900px) {
+            transform: none;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            width: 100px;
+        }
+        
+        @media all and (max-width: 700px) {
+            width: 120px;
+        }
     }
 }
 
@@ -113,7 +169,16 @@
     padding-bottom: 40px;
     padding-top: 40px;
 
-    @media all and (max-width: 1050px) {
+    @media all and (max-width: 900px) {
+        width: 55%;
+        float: right;
+        display: inline-block;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    @media all and (min-width: 901px) and (max-width: 1050px) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -122,13 +187,22 @@
         color: $color-wild-sand;
         background-color: $color-razzmatazz;
         margin-top: 30px;
+
+        @media all and (max-width: 900px) {
+            margin-top: 10px;
+        }
     }
 }
 
 .card-feature {
     color: $color-scorpion;
     line-height: 2.5em;
-    font-size: 0.95em; // desktop: 1em
+    font-size: 0.95em;
+
+    @media all and (max-width: 900px) {
+        line-height: 1.8;
+    }
+
     @media all and (min-width: 1800px) {
         font-size: 1em;
     }
