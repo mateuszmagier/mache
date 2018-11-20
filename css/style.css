@@ -164,6 +164,10 @@
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px; }
+    @media all and (max-height: 500px) {
+      .home-section-header:after {
+        margin-top: 10px;
+        margin-bottom: 10px; } }
     @media all and (max-width: 600px) {
       .home-section-header:after {
         width: 140px; } }
@@ -176,6 +180,9 @@
   font-size: 1.2em;
   margin-bottom: 50px;
   line-height: 1.65em; }
+  @media all and (max-height: 500px) {
+    .home-section-description {
+      margin-bottom: 20px; } }
   @media all and (min-width: 601px) and (max-width: 900px) {
     .home-section-description {
       font-size: 1.1em; } }
@@ -336,12 +343,16 @@
   justify-content: space-around;
   margin-top: 70px;
   margin-bottom: 100px; }
+  @media all and (max-width: 400px) {
+    .services-container {
+      width: 95%;
+      margin-bottom: 60px; } }
   @media all and (max-width: 500px) {
     .services-container {
       margin-left: auto;
       margin-right: auto;
       justify-content: space-between; } }
-  @media all and (max-width: 700px) {
+  @media all and (min-width: 401px) and (max-width: 700px) {
     .services-container {
       width: 80%;
       margin-bottom: 60px; } }
@@ -369,7 +380,12 @@
   justify-content: center;
   border: 1px solid #bfbfbf;
   border-radius: 100%; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 400px) {
+    .service-icon {
+      margin: 0 auto;
+      width: 90px;
+      height: 90px; } }
+  @media all and (min-width: 401px) and (max-width: 600px) {
     .service-icon {
       margin: 0 auto;
       width: 110px;
@@ -382,7 +398,11 @@
   color: #ed145b;
   text-transform: uppercase;
   margin-top: 30px; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 400px) {
+    .service-name {
+      font-size: 0.9em;
+      margin-top: 20px; } }
+  @media all and (min-width: 401px) and (max-width: 600px) {
     .service-name {
       font-size: 0.95em;
       margin-top: 20px; } }
@@ -663,15 +683,17 @@
     background-color: #f4f4f4;
     color: #5a5a5a;
     transform: translatey(50%); }
+    @media all and (max-width: 400px) {
+      .card-header .card-name {
+        width: 100px; } }
     @media all and (max-width: 900px) {
       .card-header .card-name {
         transform: none;
         position: absolute;
         bottom: 10px;
         left: 0;
-        right: 0;
-        width: 100px; } }
-    @media all and (max-width: 700px) {
+        right: 0; } }
+    @media all and (min-width: 401px) and (max-width: 700px) {
       .card-header .card-name {
         width: 120px; } }
 
@@ -890,7 +912,7 @@
     .updates-container {
       grid-template-columns: auto;
       justify-content: center;
-      width: 80%;
+      width: 90%;
       margin: 0 auto; } }
   @media all and (min-width: 501px) and (max-width: 900px) {
     .updates-container {
