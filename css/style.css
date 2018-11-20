@@ -39,16 +39,12 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   padding-top: 30px; }
-  @media all and (max-width: 600px) {
-    .header.container {
-      flex-direction: column;
-      width: 100%;
-      text-align: center; } }
   @media all and (min-width: 601px) and (max-width: 750px) {
     .header.container {
       width: 85%; } }
@@ -58,15 +54,47 @@
 
 @media all and (max-width: 600px) {
   .menu-container {
-    padding-top: 15px; } }
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all .3s ease-in; } }
+.menu-container.visible {
+  transform: translateX(0);
+  z-index: 1;
+  transition: all .3s ease-in; }
 
 .menu-list {
   list-style: none; }
+  @media all and (max-width: 600px) {
+    .menu-list {
+      height: 80%;
+      margin: 0 auto;
+      margin-top: 10%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch; } }
 
 .menu-element {
   display: inline-block;
   margin-left: 15px; }
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 600px) {
+    .menu-element {
+      flex-grow: 1;
+      margin-left: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      align-content: stretch;
+      border-bottom: #ed145b 2px solid; }
+      .menu-element:last-child {
+        border-bottom: none; } }
+  @media all and (min-width: 601px) and (max-width: 750px) {
     .menu-element {
       margin-left: 10px; } }
 
@@ -76,11 +104,38 @@
   font-weight: 700;
   font-size: 1.06666em;
   transition: color .2s ease-in-out; }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 600px) {
+    .menu-link {
+      display: block;
+      font-size: 1.5em;
+      width: 100%;
+      height: 100%; } }
+  @media all and (min-width: 601px) and (max-width: 900px) {
     .menu-link {
       font-size: 1em; } }
   .menu-link:hover {
     color: #ed145b; }
+
+.menu-show {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  cursor: pointer; }
+  @media all and (min-width: 601px) {
+    .menu-show {
+      display: none; } }
+
+.menu-close {
+  cursor: pointer;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 20px; }
+  @media all and (min-width: 601px) {
+    .menu-close {
+      display: none; } }
 
 .home-section-content {
   text-align: center;

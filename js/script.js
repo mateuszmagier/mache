@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             this.activeQuote.classList.remove("quote-active");
-            
+
             setTimeout(function () {
                 this.activeQuote.classList.add("quote-invisible");
                 newActiveQuote.classList.remove("quote-invisible");
@@ -51,6 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     };
 
+    let nav = document.querySelector('.menu-container');
+    let menuShow = document.querySelector('.menu-show');
+    let menuClose = document.querySelector('.menu-close');
+
+    menuShow.addEventListener('click', function () {
+        nav.classList.add('visible');
+    });
+    menuClose.addEventListener('click', function () {
+        nav.classList.remove('visible');
+    });
 
 
     let slider = new QuotesSlider(".quotes-container");
