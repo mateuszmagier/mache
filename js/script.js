@@ -50,16 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
             this.registerArrowsClickListeners();
         };
     };
+    let scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 600
+    });
 
     let nav = document.querySelector('.menu-container');
     let menuShow = document.querySelector('.menu-show');
     let menuClose = document.querySelector('.menu-close');
+    let menuLinks = document.querySelectorAll('.menu-link');
 
     menuShow.addEventListener('click', function () {
         nav.classList.add('visible');
     });
     menuClose.addEventListener('click', function () {
         nav.classList.remove('visible');
+    });
+    
+    [].forEach.call(menuLinks, function(link) {
+        link.addEventListener('click', function() {
+            nav.classList.remove('visible');
+        });
     });
 
 

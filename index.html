@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <section class="home-section">
+    <section class="home-section" id="home-section">
         <header class="header container">
             <a href="#" class="logo-link">
                 <img src="img/logo.png" class="logo-image">
@@ -23,19 +24,19 @@
             <nav class="menu-container">
                 <ul class="menu-list">
                     <li class="menu-element">
-                        <a href="#" class="menu-link">Home</a>
+                        <a data-scroll href="#home-section" class="menu-link">Home</a>
                     </li>
                     <li class="menu-element">
-                        <a href="#" class="menu-link">About Us</a>
+                        <a data-scroll href="#about-section" class="menu-link">About Us</a>
                     </li>
                     <li class="menu-element">
-                        <a href="#" class="menu-link">Our Services</a>
+                        <a data-scroll href="#services-section" class="menu-link">Our Services</a>
                     </li>
                     <li class="menu-element">
-                        <a href="#" class="menu-link">Prices</a>
+                        <a data-scroll href="#prices-section" class="menu-link">Prices</a>
                     </li>
                     <li class="menu-element">
-                        <a href="#" class="menu-link">Contact</a>
+                        <a data-scroll href="#contact-section" class="menu-link">Contact</a>
                     </li>
                 </ul>
                 <a class="menu-close">
@@ -51,10 +52,10 @@
             <div class="home-section-description">
                 Elegant and clean PSD template, which you can download and use for free!<br/> You can easily modify the design to make it your own and help you get your project running faster.
             </div>
-            <a href="#" class="button">show more</a>
+            <a data-scroll href="#about-section" class="button">show more</a>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="about-section-content">
             <div class="about-text">
                 <h2 class="section-header">
@@ -70,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="services-section">
+    <section class="services-section" id="services-section">
         <div class="container">
             <h2 class="section-header">
                 Our Services
@@ -121,7 +122,7 @@
             <div class="arrow right-arrow">&rsaquo;</div>
         </div>
     </section>
-    <section class="prices-section">
+    <section class="prices-section" id="prices-section">
         <div class="container">
             <h2 class="section-header">
                 Check Our Prices
@@ -255,7 +256,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
         <div class="contact-section-container container">
             <div class="contact-header">Became A Part Of <span style="font-weight: 700;">Mache</span> Community Today</div>
             <div class="button">join us</div>
