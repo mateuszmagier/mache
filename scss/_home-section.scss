@@ -16,11 +16,26 @@
     right: 0;
     top: 0;
     padding-top: 30px;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
 
     &.container {
 
         @media all and (min-width: 601px) and (max-width: 750px) {
             width: 85%;
+        }
+    }
+
+    &.fixed {
+        width: 100%;
+        padding: 20px 10%;
+        background-color: black;
+        position: fixed;
+        z-index: 1;
+        transition: all .3s ease-in;
+        border-bottom: $color-razzmatazz 2px solid;
+        @media all and (max-width: 600px) {
+            padding: 10px 10%;
         }
     }
 

@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuShow = document.querySelector('.menu-show');
     let menuClose = document.querySelector('.menu-close');
     let menuLinks = document.querySelectorAll('.menu-link');
+    let navHeader = document.querySelector('.header');
 
     menuShow.addEventListener('click', function () {
         nav.classList.add('visible');
@@ -70,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', function() {
             nav.classList.remove('visible');
         });
+    });
+
+    document.addEventListener('scroll', function() {
+        console.log(window.pageYOffset);
+        if(window.pageYOffset === 0) {
+            navHeader.classList.remove('fixed');
+        } else {
+            navHeader.classList.add('fixed');
+        }
     });
 
 
